@@ -1,6 +1,11 @@
+@media (max-width: 768px) {
+    .book-content {
+        flex-direction: column;
+    }
+}
+
 body {
     background-color: rgb(147, 207, 205);
-    /* 薄いグリーン */
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
     padding: 20px;
@@ -10,26 +15,24 @@ body {
     max-width: 800px;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    padding: 25px; /* Increased padding for better spacing */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly darker shadow for better contrast */
+    border-radius: 10px; /* Slightly larger border-radius for smoother corners */
 }
 
 .container h2 {
     font-family: "Shippori Mincho B1", serif;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    /* タイトルを中央寄せ */
-    margin-bottom: 10px;
-    font-size: 24px;
+    font-weight: 700; /* Increased weight for better emphasis */
+    font-size: 28px; /* Larger font size for better visibility */
     color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* More spacing below the title */
 }
 
 .book-content {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* More spacing below book content */
 }
 
 .book-cover {
@@ -40,43 +43,35 @@ body {
 }
 
 .book-cover img {
-    max-width: 100%;
+    max-width: auto%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 8px; /* Slightly larger border-radius for images */
 }
 
 .book-description {
     flex: 2;
 }
 
-.book-description h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 12px;
-    color: #555;
-
-}
-
 .book-description p {
-    line-height: 1.6;
-    font-size: 12px;
-    color: #666;
+    line-height: 1.8; /* Slightly increased line height for better readability */
+    font-size: 16px; /* Increased font size for better readability */
+    color: #444;
     overflow-wrap: break-word;
 }
 
 .purchase-links {
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0; /* Increased spacing around the purchase links */
 }
 
 .purchase-links a {
     text-decoration: none;
     color: #474545;
     background-color: rgb(147, 207, 205);
-    padding: 10px 20px;
+    padding: 12px 25px; /* Slightly increased padding for better button appearance */
     border-radius: 5px;
-    font-size: 16px;
-    margin: 0 10px;
+    font-size: 18px; /* Larger font size for the buttons */
+    margin: 0 15px; /* More space between buttons */
     display: inline-block;
     transition: background-color 0.3s;
 }
@@ -86,51 +81,40 @@ body {
 }
 
 .author-info {
-    padding: 15px;
+    padding: 20px; /* Increased padding for better spacing */
     background-color: #f0f8e2;
-    border-left: 4px solid #4caf50;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border-left: 5px solid #4caf50; /* Slightly thicker border for emphasis */
+    border-radius: 8px; /* Slightly larger border-radius for smoother corners */
     margin: 20px auto;
-    /* 上下のマージンと中央寄せ */
     max-width: 800px;
     text-align: center;
-    /* 中央寄せ */
-}
-
-.author-info h3 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #333;
 }
 
 .author-info h4 {
     text-align: left;
     margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #555;
+    margin-bottom: 15px; /* Increased space below the heading */
+    font-size: 16px; /* Larger font size for better readability */
+    color: #333;
 }
 
 .author-info p {
     text-align: left;
-    line-height: 1.6;
-    font-size: 11px;
-    color: #666;
+    line-height: 1.8; /* Increased line height for better readability */
+    font-size: 14px; /* Increased font size for better readability */
+    color: #555;
 }
 
 .author-info .gray-text {
     color: #b1a9a9;
-    /* 灰色の文字色 */
 }
 
 .center-text {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger font size for better readability */
     color: #292929;
 }
 
 .author-info .small-link {
-    font-size: 10px;
-    /* リンクの文字サイズを小さく */
+    font-size: 12px; /* Slightly larger link size for readability */
 }
