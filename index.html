@@ -22,11 +22,7 @@
         <h2>この感情が思い出に変わる頃には、</h2>
         <div class="book-content">
             <div class="book-cover">
-                <div class="slider">
                     <img src="image/top1.jpg" alt="書籍の表紙1">
-                    <img src="image/top2.jpg" alt="書籍の表紙2">
-                    <button class="prev">&#10094;</button>
-                    <button class="next">&#10095;</button>
                 </div>
             </div>
             <div class="book-description">
@@ -88,33 +84,6 @@
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
-
-        <script>
-    const slides = document.querySelectorAll('.slider img');
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    let currentSlide = 0;
-
-    function showSlide(index) {
-        slides[currentSlide].style.display = 'none'; // 現在の画像を非表示に
-        currentSlide = (index + slides.length) % slides.length; // 次の画像へ
-        slides[currentSlide].style.display = 'block'; // 次の画像を表示
-    }
-
-    function showNextSlide() {
-        showSlide(currentSlide + 1);
-    }
-
-    function showPrevSlide() {
-        showSlide(currentSlide - 1);
-    }
-
-    nextButton.addEventListener('click', showNextSlide);
-    prevButton.addEventListener('click', showPrevSlide);
-
-    setInterval(showNextSlide, 3000); // 3秒ごとに自動切り替え
-</script>
 
     </script>
 

@@ -46,6 +46,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 8px; /* Slightly larger border-radius for images */
+    border: 1px solid rgba(56, 50, 50, 0.544); /* 細く薄いグレーの線を追加 */
 }
 
 .book-description {
@@ -139,44 +140,4 @@ body {
 .back-to-top.show {
     opacity: 1;
     visibility: visible;
-}
-.slider {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: auto;
-}
-
-.slider img {
-    width: 100%;
-    height: auto;
-    display: none; /* すべての画像を非表示に */
-}
-
-.slider img:first-child {
-    display: block; /* 最初の画像のみ表示 */
-}
-
-.slider button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    display: none; /* 初期状態で非表示 */
-}
-
-.slider:hover button {
-    display: block; /* カーソルが乗ったら表示 */
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
 }
