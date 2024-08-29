@@ -63,6 +63,30 @@
     </div>
     <hr>
     <div class="center-text">© zeninodaisansha</div>
+
+
+    <a href="#" class="back-to-top">TOPに戻る</a>
+
+
+    <script>
+        const backToTopButton = document.querySelector('.back-to-top');
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // スクロール量が300pxを超えたら表示
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+    
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    
+    
+
 </body>
 
 </html>

@@ -118,3 +118,25 @@ body {
 .author-info .small-link {
     font-size: 12px; /* Slightly larger link size for readability */
 }
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, opacity 0.3s;
+    z-index: 1000; /* 他の要素より前面に表示 */
+    opacity: 0; /* 初期状態では非表示 */
+    visibility: hidden;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
