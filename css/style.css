@@ -156,3 +156,27 @@ body {
 .slider img:first-child {
     display: block; /* 最初の画像のみ表示 */
 }
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* 初期状態で非表示 */
+}
+
+.slider:hover button {
+    display: block; /* カーソルが乗ったら表示 */
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
