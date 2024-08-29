@@ -88,32 +88,34 @@
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-        const slides = document.querySelectorAll('.slider img');
 
 
-        const slides = document.querySelectorAll('.slider img');
-        const prevButton = document.querySelector('.prev');
-        const nextButton = document.querySelector('.next');
-        let currentSlide = 0;
+        <script>
+    const slides = document.querySelectorAll('.slider img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentSlide = 0;
 
-        function showSlide(index) {
-            slides[currentSlide].style.display = 'none'; // 現在の画像を非表示に
-            currentSlide = (index + slides.length) % slides.length; // 次の画像へ
-            slides[currentSlide].style.display = 'block'; // 次の画像を表示
-        }
+    function showSlide(index) {
+        slides[currentSlide].style.display = 'none'; // 現在の画像を非表示に
+        currentSlide = (index + slides.length) % slides.length; // 次の画像へ
+        slides[currentSlide].style.display = 'block'; // 次の画像を表示
+    }
 
-        function showNextSlide() {
-            showSlide(currentSlide + 1);
-        }
+    function showNextSlide() {
+        showSlide(currentSlide + 1);
+    }
 
-        function showPrevSlide() {
-            showSlide(currentSlide - 1);
-        }
+    function showPrevSlide() {
+        showSlide(currentSlide - 1);
+    }
 
-        nextButton.addEventListener('click', showNextSlide);
-        prevButton.addEventListener('click', showPrevSlide);
+    nextButton.addEventListener('click', showNextSlide);
+    prevButton.addEventListener('click', showPrevSlide);
 
-        setInterval(showNextSlide, 3000); // 3秒ごとに自動切り替え
+    setInterval(showNextSlide, 3000); // 3秒ごとに自動切り替え
+</script>
+
     </script>
 
 
