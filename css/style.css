@@ -45,6 +45,7 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px; /* Slightly larger border-radius for images */
+            border: 1px solid rgba(30, 30, 30, 0.334); /* 細く薄いグレーの線を追加 */
         }
 
         .book-description {
