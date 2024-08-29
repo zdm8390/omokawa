@@ -22,7 +22,10 @@
         <h2>この感情が思い出に変わる頃には、</h2>
         <div class="book-content">
             <div class="book-cover">
-                <img src="image/top.jpg" alt="書籍の表紙">
+                <div class="slider">
+                    <img src="image/top1.jpg" alt="書籍の表紙1">
+                    <img src="image/top2.jpg" alt="書籍の表紙2">
+                </div>
             </div>
             <div class="book-description">
                 <p>
@@ -83,6 +86,16 @@
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+        const slides = document.querySelectorAll('.slider img');
+    let currentSlide = 0;
+
+    function showNextSlide() {
+        slides[currentSlide].style.display = 'none'; // 現在の画像を非表示に
+        currentSlide = (currentSlide + 1) % slides.length; // 次の画像へ
+        slides[currentSlide].style.display = 'block'; // 次の画像を表示
+    }
+
+    setInterval(showNextSlide, 3000); // 3秒ごとに切り替え
     </script>
     
     
