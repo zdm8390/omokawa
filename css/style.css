@@ -43,7 +43,7 @@ body {
 }
 
 .book-cover img {
-    max-width: auto;
+    max-width: 100%;
     height: auto;
     border-radius: 8px; /* Slightly larger border-radius for images */
 }
