@@ -12,6 +12,13 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+.container h2{
+    font-family: "Shippori Mincho B1", serif;/* タイトルに指定するフォント */
+    text-align: center; /* タイトルを中央寄せ */
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
 .book-content {
     display: flex;
     align-items: flex-start;
@@ -47,7 +54,7 @@ body {
 }
 .book-description p {
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
 }
 .purchase-links {
