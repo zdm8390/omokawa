@@ -1,9 +1,11 @@
 body {
-    background-color: rgb(147, 207, 205); /* 薄いグリーン */
+    background-color: rgb(147, 207, 205);
+    /* 薄いグリーン */
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
     padding: 20px;
 }
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -12,33 +14,41 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-.container h2{
+
+.container h2 {
     font-family: "Shippori Mincho B1", serif;
     font-weight: 600;
-    font-style: normal;    text-align: center; /* タイトルを中央寄せ */
+    font-style: normal;
+    text-align: center;
+    /* タイトルを中央寄せ */
     margin-bottom: 10px;
     font-size: 24px;
     color: #333;
 }
+
 .book-content {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
 }
+
 .book-cover {
     flex: 1;
     text-align: center;
     margin-right: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
 }
+
 .book-cover img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
+
 .book-description {
     flex: 2;
 }
+
 .book-description h3 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -46,16 +56,19 @@ body {
     color: #555;
 
 }
+
 .book-description p {
     line-height: 1.6;
     font-size: 12px;
     color: #666;
     overflow-wrap: break-word;
 }
+
 .purchase-links {
     text-align: center;
     margin: 30px 0;
 }
+
 .purchase-links a {
     text-decoration: none;
     color: #474545;
@@ -67,45 +80,57 @@ body {
     display: inline-block;
     transition: background-color 0.3s;
 }
+
 .purchase-links a:hover {
     background-color: #45a049;
 }
+
 .author-info {
     padding: 15px;
     background-color: #f0f8e2;
     border-left: 4px solid #4caf50;
     border-radius: 5px;
     margin-bottom: 20px;
-    margin: 20px auto; /* 上下のマージンと中央寄せ */
-    max-width: 800px;    
-    text-align: center; /* 中央寄せ */ 
+    margin: 20px auto;
+    /* 上下のマージンと中央寄せ */
+    max-width: 800px;
+    text-align: center;
+    /* 中央寄せ */
 }
+
 .author-info h3 {
     margin-top: 0;
     font-size: 20px;
     color: #333;
 }
+
 .author-info h4 {
     text-align: left;
     margin-top: 0;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 14px;
     color: #555;
 }
+
 .author-info p {
     text-align: left;
     line-height: 1.6;
-    font-size: 12px;
+    font-size: 11px;
     color: #666;
 }
+
 .author-info .gray-text {
-    color: #b1a9a9; /* 灰色の文字色 */
+    color: #b1a9a9;
+    /* 灰色の文字色 */
 }
+
 .center-text {
     text-align: center;
     font-size: 14px;
     color: #292929;
 }
+
 .author-info .small-link {
-    font-size: 12px; /* リンクの文字サイズを小さく */
+    font-size: 10px;
+    /* リンクの文字サイズを小さく */
 }
