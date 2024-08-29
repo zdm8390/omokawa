@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-
-    </style>
+    
 </head>
 
 <body>
@@ -22,8 +20,7 @@
         <h2>この感情が思い出に変わる頃には、</h2>
         <div class="book-content">
             <div class="book-cover">
-                    <img src="image/top1.jpg" alt="書籍の表紙1">
-                </div>
+                <img src="image/top.jpg" alt="書籍の表紙">
             </div>
             <div class="book-description">
                 <p>
@@ -67,11 +64,9 @@
 
 
     <a href="#" class="back-to-top">TOPに戻る</a>
-
-
     <script>
         const backToTopButton = document.querySelector('.back-to-top');
-
+    
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) { // スクロール量が300pxを超えたら表示
                 backToTopButton.classList.add('show');
@@ -79,16 +74,13 @@
                 backToTopButton.classList.remove('show');
             }
         });
-
-        backToTopButton.addEventListener('click', function (e) {
+    
+        backToTopButton.addEventListener('click', function(e) {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
-
     </script>
-
-
-
+    
 </body>
 
 </html>
