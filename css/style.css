@@ -13,8 +13,9 @@ body {
     border-radius: 8px;
 }
 .container h2{
-    font-family: "Shippori Mincho B1", serif;/* タイトルに指定するフォント */
-    text-align: center; /* タイトルを中央寄せ */
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 600;
+    font-style: normal;    text-align: center; /* タイトルを中央寄せ */
     margin-bottom: 10px;
     font-size: 24px;
     color: #333;
@@ -38,13 +39,6 @@ body {
 .book-description {
     flex: 2;
 }
-.book-description h2 {
-    font-family: "Shippori Mincho B1", serif;/* タイトルに指定するフォント */
-    text-align: center; /* タイトルを中央寄せ */
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #333;
-}
 .book-description h3 {
     margin-top: 0;
     margin-bottom: 15px;
@@ -56,6 +50,7 @@ body {
     line-height: 1.6;
     font-size: 12px;
     color: #666;
+    overflow-wrap: break-word;
 }
 .purchase-links {
     text-align: center;
