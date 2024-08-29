@@ -3,6 +3,15 @@
 <!--　あなたがカバー裏を見るようにソースを見ることはお見通しだ！　-->
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLB83FDLSS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-XLB83FDLSS');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>『この感情が思い出に変わる頃には、』紹介ページ</title>
@@ -11,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
 
 <body>
@@ -66,7 +75,7 @@
     <a href="#" class="back-to-top">TOPに戻る</a>
     <script>
         const backToTopButton = document.querySelector('.back-to-top');
-    
+
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) { // スクロール量が300pxを超えたら表示
                 backToTopButton.classList.add('show');
@@ -74,13 +83,13 @@
                 backToTopButton.classList.remove('show');
             }
         });
-    
-        backToTopButton.addEventListener('click', function(e) {
+
+        backToTopButton.addEventListener('click', function (e) {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
-    
+
 </body>
 
 </html>
