@@ -141,3 +141,71 @@
     opacity: 1;
     visibility: visible;
 }
+/* Q and A */
+
+
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* コンテナをはみ出さないようにするために追加 */
+}
+
+.bubble {
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    max-width: 100%; /* 吹き出しがコンテナをはみ出さないように調整 */
+    line-height: 1.4;
+    word-wrap: break-word; /* 長い単語がはみ出さないようにする */
+}
+
+.bubble p {
+    display: flex;
+    align-items: center; /* 画像とテキストを縦方向に中央揃え */
+    margin: 0;
+}
+
+.bubble img {
+    margin-right: 10px; /* 画像とテキストの間にスペースを追加 */
+    vertical-align: middle; /* 画像の垂直方向をテキストと揃える */
+    height: 20px; /* 画像の高さを適切なサイズに調整 */
+}
+
+.left {
+    background-color: #e0f7fa;
+    text-align: left;
+    float: left;
+    clear: both;
+}
+
+.right {
+    background-color: #c8e6c9;
+    text-align: right;
+    float: right;
+    clear: both;
+}
+
+.question .bubble {
+    margin-right: auto;
+}
+
+.answer .bubble {
+    margin-left: auto;
+}
+
+p {
+    margin: 0;
+}
+
+.chat-container h3{
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 700; /* Increased weight for better emphasis */
+    font-size: 20px; /* Larger font size for better visibility */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* More spacing below the title */
+}
