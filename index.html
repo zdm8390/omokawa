@@ -31,7 +31,7 @@
 
 <body>
 
-    <div class="container">
+    <div  id="section1" class="container">
         <h2>この感情が思い出に変わる頃には、</h2>
         <div class="book-content">
             <div class="book-cover">
@@ -49,16 +49,18 @@
             </div>
 
         </div>
-
-        <p style="font-size: 14px;"> <!-- Increased font size for better readability -->
+        <div id="section2" class="purchase-links">
+        <p style="font-size: 14px; text-align: left;"> <!-- Increased font size for better readability -->
             タイトル：この感情が思い出に変わる頃には、</br>
             発売日：2024/9/27　出版社：扶桑社　版型：四六判<br>
             本　体：1,400円（定価：1,540円）　ISBN：978-4594098308　
         </p>
+        
         <div class="purchase-links">
             <a href="https://www.amazon.co.jp/dp/4594098304" target="_blank">Amazonで購入する</a>
         </div>
-        <div class="author-info">
+    </div>
+        <div id="section3" class="author-info">
             <h4>
                 善意の第三者
                 &nbsp;&nbsp;
@@ -74,7 +76,7 @@
             </p>
         </div>
 
-            <div class="chat-container">
+            <div id="section4"  class="chat-container">
                 <h3>教えて！　善意の第三者先生！</h3>
                 <div class="question">
                     <div class="bubble left">
@@ -152,9 +154,15 @@
             </div>
 
         </div>
-
-    <hr>
-    <div class="center-text">© zeninodaisansha</div>
+<!--フロートメニュー-->
+        <div class="floating-menu">
+            <ul>
+                <li><a href="#section1">概要</a></li>
+                <li><a href="#section2">購入リンク</a></li>
+                <li><a href="#section3">著者情報</a></li>
+                <li><a href="#section4">質問コーナー</a></li>
+            </ul>
+        </div>
 
     <a href="#" class="back-to-top">TOPに戻る</a>
     <script>
@@ -173,6 +181,8 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
+    <hr>
+    <div class="center-text">© zeninodaisansha</div>
 
 </body>
 
