@@ -3,121 +3,147 @@
         flex-direction: column;
     }
 }
-        body {
-            background-color: rgb(147, 207, 205);
-            font-family: 'Noto Sans JP', sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 25px; /* Increased padding for better spacing */
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Slightly darker shadow for better contrast */
-            border-radius: 10px; /* Slightly larger border-radius for smoother corners */
-        }
+body {
+    background-color: rgb(147, 207, 205);
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
 
-        .container h2 {
-            font-family: "Shippori Mincho B1", serif;
-            font-weight: 700; /* Increased weight for better emphasis */
-            font-size: 28px; /* Larger font size for better visibility */
-            color: #333;
-            text-align: center;
-            margin-bottom: 20px; /* More spacing below the title */
-        }
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    /* Increased padding for better spacing */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    /* Slightly darker shadow for better contrast */
+    border-radius: 10px;
+    /* Slightly larger border-radius for smoother corners */
+}
 
-        .book-content {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 30px; /* More spacing below book content */
-        }
+.container h2 {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 700;
+    /* Increased weight for better emphasis */
+    font-size: 28px;
+    /* Larger font size for better visibility */
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    /* More spacing below the title */
+}
 
-        .book-cover {
-            flex: 1;
-            text-align: center;
-            margin-right: 20px;
-            margin-top: 10px;
-        }
+.book-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    /* More spacing below book content */
+}
 
-        .book-cover img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px; /* Slightly larger border-radius for images */
-            border: 1px solid rgba(30, 30, 30, 0.334); /* 細く薄いグレーの線を追加 */
-        }
+.book-cover {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+}
 
-        .book-description {
-            flex: 2;
-        }
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Slightly larger border-radius for images */
+    border: 1px solid rgba(30, 30, 30, 0.334);
+    /* 細く薄いグレーの線を追加 */
+}
 
-        .book-description p {
-            line-height: 1.8; /* Slightly increased line height for better readability */
-            font-size: 16px; /* Increased font size for better readability */
-            color: #444;
-            overflow-wrap: break-word;
-        }
+.book-description {
+    flex: 2;
+}
 
-        .purchase-links {
-            text-align: center;
-            margin: 40px 0; /* Increased spacing around the purchase links */
-        }
+.book-description p {
+    line-height: 1.8;
+    /* Slightly increased line height for better readability */
+    font-size: 16px;
+    /* Increased font size for better readability */
+    color: #444;
+    overflow-wrap: break-word;
+}
 
-        .purchase-links a {
-            text-decoration: none;
-            color: #474545;
-            background-color: rgb(147, 207, 205);
-            padding: 12px 25px; /* Slightly increased padding for better button appearance */
-            border-radius: 5px;
-            font-size: 18px; /* Larger font size for the buttons */
-            margin: 0 15px; /* More space between buttons */
-            display: inline-block;
-            transition: background-color 0.3s;
-        }
+.purchase-links {
+    text-align: center;
+    margin: 40px 0;
+    /* Increased spacing around the purchase links */
+}
 
-        .purchase-links a:hover {
-            background-color: #45a049;
-        }
+.purchase-links a {
+    text-decoration: none;
+    color: #474545;
+    background-color: rgb(147, 207, 205);
+    padding: 12px 25px;
+    /* Slightly increased padding for better button appearance */
+    border-radius: 5px;
+    font-size: 18px;
+    /* Larger font size for the buttons */
+    margin: 0 15px;
+    /* More space between buttons */
+    display: inline-block;
+    transition: background-color 0.3s;
+}
 
-        .author-info {
-            padding: 20px; /* Increased padding for better spacing */
-            background-color: #f0f8e2;
-            border-left: 5px solid #4caf50; /* Slightly thicker border for emphasis */
-            border-radius: 8px; /* Slightly larger border-radius for smoother corners */
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: center;
-        }
+.purchase-links a:hover {
+    background-color: #45a049;
+}
 
-        .author-info h4 {
-            text-align: left;
-            margin-top: 0;
-            margin-bottom: 15px; /* Increased space below the heading */
-            font-size: 16px; /* Larger font size for better readability */
-            color: #333;
-        }
+.author-info {
+    padding: 20px;
+    /* Increased padding for better spacing */
+    background-color: #f0f8e2;
+    border-left: 5px solid #4caf50;
+    /* Slightly thicker border for emphasis */
+    border-radius: 8px;
+    /* Slightly larger border-radius for smoother corners */
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
 
-        .author-info p {
-            text-align: left;
-            line-height: 1.8; /* Increased line height for better readability */
-            font-size: 14px; /* Increased font size for better readability */
-            color: #555;
-        }
+.author-info h4 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 15px;
+    /* Increased space below the heading */
+    font-size: 16px;
+    /* Larger font size for better readability */
+    color: #333;
+}
 
-        .author-info .gray-text {
-            color: #b1a9a9;
-        }
+.author-info p {
+    text-align: left;
+    line-height: 1.8;
+    /* Increased line height for better readability */
+    font-size: 14px;
+    /* Increased font size for better readability */
+    color: #555;
+}
 
-        .center-text {
-            text-align: center;
-            font-size: 16px; /* Slightly larger font size for better readability */
-            color: #292929;
-        }
+.author-info .gray-text {
+    color: #b1a9a9;
+}
 
-        .author-info .small-link {
-            font-size: 12px; /* Slightly larger link size for readability */
-        }
+.center-text {
+    text-align: center;
+    font-size: 16px;
+    /* Slightly larger font size for better readability */
+    color: #292929;
+}
+
+.author-info .small-link {
+    font-size: 12px;
+    /* Slightly larger link size for readability */
+}
+
 /*retun to top:*/
 .back-to-top {
     position: fixed;
@@ -132,8 +158,10 @@
     font-size: 14px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, opacity 0.3s;
-    z-index: 1000; /* 他の要素より前面に表示 */
-    opacity: 0; /* 初期状態では非表示 */
+    z-index: 1000;
+    /* 他の要素より前面に表示 */
+    opacity: 0;
+    /* 初期状態では非表示 */
     visibility: hidden;
 }
 
@@ -141,9 +169,8 @@
     opacity: 1;
     visibility: visible;
 }
+
 /* Q and A */
-
-
 .chat-container {
     max-width: 600px;
     margin: 0 auto;
@@ -151,28 +178,35 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* コンテナをはみ出さないようにするために追加 */
+    overflow: hidden;
+    /* コンテナをはみ出さないようにするために追加 */
 }
 
 .bubble {
     padding: 10px 20px;
     border-radius: 20px;
     margin-bottom: 10px;
-    max-width: 100%; /* 吹き出しがコンテナをはみ出さないように調整 */
+    max-width: 100%;
+    /* 吹き出しがコンテナをはみ出さないように調整 */
     line-height: 1.4;
-    word-wrap: break-word; /* 長い単語がはみ出さないようにする */
+    word-wrap: break-word;
+    /* 長い単語がはみ出さないようにする */
 }
 
 .bubble p {
     display: flex;
-    align-items: center; /* 画像とテキストを縦方向に中央揃え */
+    align-items: center;
+    /* 画像とテキストを縦方向に中央揃え */
     margin: 0;
 }
 
 .bubble img {
-    margin-right: 10px; /* 画像とテキストの間にスペースを追加 */
-    vertical-align: middle; /* 画像の垂直方向をテキストと揃える */
-    height: 20px; /* 画像の高さを適切なサイズに調整 */
+    margin-right: 10px;
+    /* 画像とテキストの間にスペースを追加 */
+    vertical-align: middle;
+    /* 画像の垂直方向をテキストと揃える */
+    height: 20px;
+    /* 画像の高さを適切なサイズに調整 */
 }
 
 .left {
@@ -201,13 +235,16 @@ p {
     margin: 0;
 }
 
-.chat-container h3{
+.chat-container h3 {
     font-family: "Shippori Mincho B1", serif;
-    font-weight: 700; /* Increased weight for better emphasis */
-    font-size: 20px; /* Larger font size for better visibility */
+    font-weight: 700;
+    /* Increased weight for better emphasis */
+    font-size: 20px;
+    /* Larger font size for better visibility */
     color: #333;
     text-align: center;
-    margin-bottom: 20px; /* More spacing below the title */
+    margin-bottom: 20px;
+    /* More spacing below the title */
 }
 
 /*フロートメニュー*/
