@@ -216,16 +216,39 @@ p {
     top: 10%;
     right: 20px;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    transition: width 0.3s, height 0.3s;
+}
+
+.floating-menu:hover,
+.floating-menu.expanded {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+}
+
+.floating-menu .menu-icon {
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
 }
 
 .floating-menu ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0 0;
+    display: none;
+}
+
+.floating-menu.expanded ul {
+    display: block;
 }
 
 .floating-menu ul li {
@@ -241,6 +264,7 @@ p {
 .floating-menu ul li a:hover {
     color: #007BFF;
 }
+
 
 html {
     scroll-behavior: smooth;

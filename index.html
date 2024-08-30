@@ -155,7 +155,9 @@
 
         </div>
 <!--フロートメニュー-->
+
         <div class="floating-menu">
+            <div class="menu-icon">☰</div>
             <ul>
                 <li><a href="#section1">概要</a></li>
                 <li><a href="#section2">購入リンク</a></li>
@@ -164,7 +166,9 @@
             </ul>
         </div>
 
+
     <a href="#" class="back-to-top">TOPに戻る</a>
+    
     <script>
         const backToTopButton = document.querySelector('.back-to-top');
 
@@ -180,6 +184,14 @@
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        const menuIcon = document.querySelector('.floating-menu .menu-icon');
+    const floatingMenu = document.querySelector('.floating-menu');
+
+    menuIcon.addEventListener('click', () => {
+        floatingMenu.classList.toggle('expanded');
+    });
+
     </script>
     <hr>
     <div class="center-text">© zeninodaisansha</div>
