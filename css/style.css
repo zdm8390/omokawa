@@ -77,7 +77,7 @@ body {
     /* Increased spacing around the purchase links */
 }
 
-.purchase-links a {
+#section4 a {
     text-decoration: none;
     color: #474545;
     background-color: rgb(147, 207, 205);
