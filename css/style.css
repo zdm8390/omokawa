@@ -34,6 +34,7 @@ body {
     margin-bottom: 20px;
     /* More spacing below the title */
 }
+
 .container h4 {
     font-family: "Shippori Mincho B1", serif;
     font-size: 14px;
@@ -149,6 +150,7 @@ body {
     font-size: 12px;
     /* Slightly larger link size for readability */
 }
+
 /*ライナーノーツ*/
 .glossary-container {
     margin: 40px auto;
