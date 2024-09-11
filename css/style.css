@@ -169,6 +169,14 @@ body {
     text-align: center;
     margin-bottom: 20px;
 }
+.glossary-container h5 {
+    font-family: "Shippori Mincho B1", serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .glossary-item {
     margin-bottom: 20px;
