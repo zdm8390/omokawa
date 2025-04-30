@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>善意の第三者 / Written Works</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: rgb(147, 207, 205);
+      color: #1f1f1f;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #2d5c5b;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+    .menu-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 25px;
+      cursor: pointer;
+    }
+    .menu-icon div {
+      height: 5px;
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 5px;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #234f4e;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .menu a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 1.2rem;
+    }
+    .menu a:hover {
+      background-color: #2d5c5b;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      padding-top: 100px; /* ヘッダーの高さ分調整 */
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: #2d5c5b;
+      border-bottom: 2px solid #234f4e;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .work {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #003e3c;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* スライダー形式 */
+    .slider {
+      position: relative;
+      overflow: hidden;
+    }
+    .slide-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 1rem;
+      background-color: #ffffff;
+      color: #222;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+
+    /* TOPに戻るボタン */
+    .top-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #234f4e;
+      color: white;
+      padding: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+    .top-button:hover {
+      background-color: #2d5c5b;
+    }
+
+    /* フローティングメニュー用のCSS */
+    .floating-menu {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+    .floating-menu a {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+      font-size: 1.1rem;
+    }
+    .floating-menu a:hover {
+      background-color: #234f4e;
+    }
+  </style>
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header>
+    <h1>善意の第三者 / Written Works</h1>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="menu" id="menu">
+      <a href="#profile">プロフィール</a>
+      <a href="#representative">代表作</a>
+      <a href="#long">長編作品</a>
+      <a href="#short">短編作品</a>
+      <a href="#contact">お問い合わせ</a>
+    </div>
+  </header>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <!-- プロフィールセクション -->
+    <section id="profile">
+      <h2>プロフィール</h2>
+      <p>システムエンジニアから図書館司書に転職後、2022年より本格的に小説の投稿を開始。2023年後期には第3回HJ小説大賞で最終選考に残り、2024年には『この感情が思い出に変わる頃には、』（扶桑社）で商業デビューを果たした。現実の日本の高校を舞台にした、等身大の青春群像劇を得意とし、人間ドラマや別れをテーマにした物語を多く執筆。現在も長編・短編ともに精力的に発表を続けている。</p>
+      <p><strong>小説アカウント：</strong><a href="https://novelup.plus/user/974580553/profile" target="_blank">ノベルアップ＋</a></p>
+      <p><strong>Xアカウント：</strong><a href="https://x.com/zen_e3" target="_blank">@zen_e3</a></p>
+    </section>
+
+    <!-- 代表作セクション -->
+    <section id="representative">
+      <h2>代表作</h2>
+      <div class="work">
+        <h3>この感情が思い出に変わる頃には、</h3>
+        <img src="image/top1.jpg" alt="この感情が思い出に変わる頃には" style="max-width: 200px; display: block; margin-bottom: 1rem;">
+        <p>（ここにあらすじ100文字程度）</p>
+        <p><a href="#">Amazonリンク</a></p>
+      </div>
+    </section>
+
+    <!-- 長編作品セクション -->
+    <section id="long">
+      <h2>長編作品</h2>
+      <div class="slider" id="long-slider">
+        <div class="slide-track">
+          <div class="slide"><h3>作品A</h3><p>（あらすじ100文字程度）</p><p><a href="#">掲載先リンク</a></p></div>
+          <div class="slide"><h3>作品B</h3><p>（あらすじ100文字程度）</p><p><a href="#">掲載先リンク</a></p></div>
+          <div class="slide"><h3>作品C</h3><p>（あらすじ100文字程度）</p><p><a href="#">掲載先リンク</a></p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 短編作品セクション -->
+    <section id="short">
+      <h2>短編作品</h2>
+      <div class="slider" id="short-slider">
+        <div class="slide-track">
+          <div class="slide"><h3>作品A</h3><p>（あらすじ100文字程度）</p><p><a href="#">掲載先リンク</a></p></div>
+          <div class="slide"><h3>作品B</h3><p>（あらすじ100文字程度）</p><p><
